@@ -103,7 +103,6 @@ html, body {
   margin-top: 50px;
   margin-left: 3.5%;
 }
-
 .underline h1{
   text-decoration: underline;
   text-underline-offset: 14px;
@@ -118,26 +117,26 @@ hr {
   margin-bottom: 20px;
 }
 
-.tofu {
+.Omurice {
   max-width: 300px;
   display: flex;
   gap: 1em;
   align-items: flex-start;
 }
 
-.tofu img {
+.Omurice img {
   width: 104%;
   height: 245px;
-  margin-left: 35%;
 }
 
 .text {
   display: flex;
   flex-direction: column;
+  margin-left: 15%;
   justify-content: flex-start;
 }
 
-.tofu h2 {
+.Omurice h2 {
   margin: 0;
   font-family: Newsreader, serif;
   font-size: 39px;
@@ -150,7 +149,7 @@ hr {
 .serving {
   display: block;
   font-family: Newsreader, serif;
-  font-size: 25px;
+  font-size: 26px;
   color: #000000;
   letter-spacing: 1.5px;
   padding: 5px;
@@ -163,9 +162,10 @@ hr {
   border: solid;
   padding: 15px;
   border-width: 1px;
-  font-size: 17px;
+  font-size: 18px;
   background-color: #ffffff;
   border-radius: 25px;
+  width: 800px;
 }
 
 .main1 {
@@ -179,12 +179,11 @@ hr {
 }
 
 .ingredients-box {
-  flex: 3;
+  flex: 2;
   border: 1px solid #000;
   border-radius: 25px;
   padding: 10px;
   background-color: #fff;
-  height: 193px;
 
 }
 
@@ -228,7 +227,7 @@ hr {
   border-radius: 25px;
   font-family: Newsreader, serif;
   padding: 0;
-  width: 70%;
+  width: 55%;
 }
 .instructions ul{
   list-style-type: disc;
@@ -238,7 +237,7 @@ hr {
 .Nutri-Value{
   padding: 15px;
   border-width: 1px;
-  font-size: 17px;
+  font-size: 18px;
   border: solid;
   border-width: 1px;
   background-color: #ffffff;
@@ -259,9 +258,19 @@ p{
 .Total-cost p{
   white-space: nowrap;
 }
-.text-container, .instructions, .tofu, .Nutri-Value{
+.text-container, .instructions, .Omurice, .Nutri-Value{
   margin-left: 5%;
   margin-top: 3%;
 }
-
-
+.center img{
+  margin-left: 35%;
+}
+.main1{
+  margin-left: 8%;
+}
+.instructions{
+  margin-left: 11.5%;
+}
+.Nutri-Value{
+  margin-left: 11.5%;
+}

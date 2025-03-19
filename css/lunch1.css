@@ -107,7 +107,6 @@ html, body {
     text-decoration: underline;
     text-underline-offset: 14px;
 }
-
 hr {
     border: none;
     border-top: 2px solid #000000;
@@ -117,14 +116,14 @@ hr {
     margin-bottom: 20px;
 }
 
-.Oyakodon {
+.Monggo {
     max-width: 300px;
     display: flex;
     gap: 1em;
     align-items: flex-start;
 }
 
-.Oyakodon img {
+.Monggo img {
     width: 104%;
     height: 245px;
 }
@@ -136,7 +135,7 @@ hr {
     justify-content: flex-start;
 }
 
-.Oyakodon h2 {
+.Monggo h2 {
     margin: 0;
     font-family: Newsreader, serif;
     font-size: 39px;
@@ -165,6 +164,8 @@ hr {
     font-size: 17px;
     background-color: #ffffff;
     border-radius: 25px;
+    width: 800px;
+
 }
 
 .main1 {
@@ -257,7 +258,7 @@ p{
 .Total-cost p{
     white-space: nowrap;
 }
-.text-container, .instructions, .Oyakodon, .Nutri-Value{
+.text-container, .instructions, .Monggo, .Nutri-Value{
     margin-left: 5%;
     margin-top: 3%;
 }

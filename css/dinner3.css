@@ -107,7 +107,6 @@ html, body {
     text-decoration: underline;
     text-underline-offset: 14px;
 }
-
 hr {
     border: none;
     border-top: 2px solid #000000;
@@ -117,14 +116,14 @@ hr {
     margin-bottom: 20px;
 }
 
-.Oyakodon {
+.GarlicTofu {
     max-width: 300px;
     display: flex;
     gap: 1em;
     align-items: flex-start;
 }
 
-.Oyakodon img {
+.GarlicTofu img {
     width: 104%;
     height: 245px;
 }
@@ -136,7 +135,7 @@ hr {
     justify-content: flex-start;
 }
 
-.Oyakodon h2 {
+.GarlicTofu h2 {
     margin: 0;
     font-family: Newsreader, serif;
     font-size: 39px;
@@ -165,6 +164,7 @@ hr {
     font-size: 17px;
     background-color: #ffffff;
     border-radius: 25px;
+    width: 600px;
 }
 
 .main1 {
@@ -178,12 +178,12 @@ hr {
 }
 
 .ingredients-box {
-    flex: 3;
+    flex: 1;
     border: 1px solid #000;
     border-radius: 25px;
     padding: 10px;
     background-color: #fff;
-
+    height: 300px;
 }
 
 .cost-box {
@@ -257,7 +257,7 @@ p{
 .Total-cost p{
     white-space: nowrap;
 }
-.text-container, .instructions, .Oyakodon, .Nutri-Value{
+.text-container, .instructions, .GarlicTofu, .Nutri-Value{
     margin-left: 5%;
     margin-top: 3%;
 }

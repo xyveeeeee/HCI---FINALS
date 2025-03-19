@@ -103,11 +103,11 @@ html, body {
   margin-top: 50px;
   margin-left: 3.5%;
 }
-
 .underline h1{
   text-decoration: underline;
   text-underline-offset: 14px;
 }
+
 
 hr {
   border: none;
@@ -118,26 +118,26 @@ hr {
   margin-bottom: 20px;
 }
 
-.tofu {
+.Lettuce-wrap {
   max-width: 300px;
   display: flex;
   gap: 1em;
   align-items: flex-start;
 }
 
-.tofu img {
+.Lettuce-wrap img {
   width: 104%;
   height: 245px;
-  margin-left: 35%;
 }
 
 .text {
   display: flex;
   flex-direction: column;
+  margin-left: 15%;
   justify-content: flex-start;
 }
 
-.tofu h2 {
+.Lettuce-wrap h2 {
   margin: 0;
   font-family: Newsreader, serif;
   font-size: 39px;
@@ -166,6 +166,7 @@ hr {
   font-size: 17px;
   background-color: #ffffff;
   border-radius: 25px;
+  width: 800px;
 }
 
 .main1 {
@@ -179,12 +180,11 @@ hr {
 }
 
 .ingredients-box {
-  flex: 3;
+  flex: 2;
   border: 1px solid #000;
   border-radius: 25px;
   padding: 10px;
   background-color: #fff;
-  height: 193px;
 
 }
 
@@ -259,9 +259,20 @@ p{
 .Total-cost p{
   white-space: nowrap;
 }
-.text-container, .instructions, .tofu, .Nutri-Value{
+.text-container, .instructions, .Lettuce-wrap, .Nutri-Value{
   margin-left: 5%;
   margin-top: 3%;
 }
-
+.center img{
+  margin-left: 35%;
+}
+.main1{
+  margin-left: 8%;
+}
+.instructions{
+  margin-left: 11.5%;
+}
+.Nutri-Value{
+  margin-left: 11.5%;
+}
 
