@@ -25,17 +25,17 @@ html, body {
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .header img {
+}
+.header img {
     width: 60px;
     height: 50px;
     margin-bottom: 3px;
     margin-right: 3px;
-  }
-  .header a{
+}
+.header a{
     text-decoration: none;
-  }
-  .header h2 {
+}
+.header h2 {
     font-family: Newsreader, serif;
     font-size: 24px; /* Fixed font size */
     color: #333;
@@ -45,17 +45,17 @@ html, body {
     align-items: flex-start;
     margin-left: 6px;
     line-height: 1;
-  }
-  
-  
-  .nav {
+}
+
+
+.nav {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
     margin-right: 5%;
-  }
-  
-  .nav a {
+}
+
+.nav a {
     letter-spacing: 0.5px;
     display: inline-block;
     text-align: center;
@@ -71,10 +71,9 @@ html, body {
     width: 160px;
     height: 50px; 
     box-sizing: border-box;
-  }
-  
-  
-  @media (max-width: 768px) { 
+}
+
+@media (max-width: 768px) { 
     .nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -84,11 +83,11 @@ html, body {
         padding: 0;
         margin: 0 auto;
     }
-  
+
     #dp, #rfs {
         margin-top: 10px;
     }
-  
+
     .nav a {
         position: relative; 
         font-size: 14px;
@@ -104,12 +103,11 @@ html, body {
         align-items: center;
         justify-content: center;
     }
-  
-    /* Hover effect */
+   
     .nav a:hover {
         background-color: #1F2C35;
     }
-  
+
     .nav a::after {
         content: "";
         position: absolute;
@@ -124,20 +122,21 @@ html, body {
     
     .nav a:hover::after {
         width: 90%;
-  
+
     }
     
     .nav a.on {
         background-color: #F5F2EB;
         color: #1F2C35;
     }
-  }
-  
-  .nav a.on {
+}
+
+.nav a.on {
     background-color: #F5F2EB;
     color: #1F2C35;
-  
-  }
+
+}
+
 .underline-container, .underline-container1 .underline-container2, .underline-container3 {
     position: relative;
     text-align: left;
@@ -168,30 +167,30 @@ hr {
     margin-bottom: 20px;
 }
 
-.Kangkong {
+.TunaEgg {
     max-width: 300px;
     display: flex;
     gap: 1em;
     align-items: flex-start;
-  }
-  
-  .Kangkong img {
+}
+
+.TunaEgg img {
+    border-radius: 3%;
     height: 245px;
     width: 100%;
     max-width: 300px; 
     object-fit: cover;
     margin-left: 36%;
-    border-radius: 3%;
-  }
-  
-  .text {
+}
+
+.text {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
     justify-content: flex-start;
-  }
-  
-  .Kangkong h2 {
+}
+
+.TunaEgg h2 {
     margin: 0;
     font-family: Newsreader, serif;
     font-size: 39px;
@@ -200,9 +199,9 @@ hr {
     padding: 5px;
     white-space: nowrap;
     
-  }
-  
-  .serving {
+}
+
+.serving {
     font-family: "Newsreader", serif;
     font-size: 26px;
     color: #000000;
@@ -211,63 +210,64 @@ hr {
     font-style: italic;
     font-weight: bold;
     margin: 5px 0;
-  }
-  
-  .description {
-  
-    border: solid;
+}
+
+.description {
+    border: 1px solid #000; 
     padding: 15px;
-    border-width: 1px;
+    display: flex;
     font-size: 17px;
     background-color: #ffffff;
-    border-radius: 25px;
-    width: 600px;   
+    border-radius: 15px;
     max-width: 100%;
-  }
-  
-  @media (max-width: 768px) {
-    .Kangkong {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 1em;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 1.5; 
+}
+
+@media (max-width: 768px) {
+    .TunaEgg {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
     }
-  
-    .Kangkong img {
-      max-width: 90%;
-      margin-left: 45%;
+
+    .TunaEgg img {
+    max-width: 90%;
+    margin-left: 45%;
     }
-  
+
     .text {
-      max-width: 100%;
+    max-width: 100%;
     }
-  
+
     .description {
-      margin-left: 10%;
-      font-size: 16px;
-      padding: 12px;
-      width: 400px;
-  
+    margin-left: 10%;
+    font-size: 16px;
+    padding: 12px;
+    width: 400px;
+
     }
-    .Kangkong h2 {
-      margin-left: 30%;
-      white-space: normal; 
+    .TunaEgg h2 {
+    margin-left: 30%;
+    white-space: normal; 
     }
     .serving{ 
-      margin: 5px auto;
+    margin: 5px auto;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .Kangkong h2 {
-      font-size: 22px;
+}
+
+@media (max-width: 480px) {
+    .TunaEgg h2 {
+    font-size: 22px;
     }
-  
+
     .description {
-      font-size: 14px;
-   
+    font-size: 14px;
+
     }
-  }
+}
 
 .main1 {
     max-width: 900px;
@@ -280,32 +280,15 @@ hr {
 }
 
 .ingredients-box {
-    flex: 2;
+    flex: 3;
     border: 1px solid #000;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
     background-color: #fff;
-    height: 223px;
-    
+
 }
-@media screen and (max-width: 768px) {
-    .ingredients-box {
-        height: 100%; 
-        
-    }
-    .ingredients-box p {
-        margin-right: 0; 
-    }
-    .ingredients-box {
-        margin-left: 0;
-    }
-    .ingredients-box h3 {
-        margin-left: 0; 
-    }
-  
-}
+
 .cost-box {
-    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -375,7 +358,7 @@ p{
 .Total-cost p{
     white-space: nowrap;
 }
-.text-container, .instructions, .Kangkong, .Nutri-Value{
+.text-container, .instructions, .TunaEgg, .Nutri-Value{
     margin-left: 5%;
     margin-top: 3%;
 }

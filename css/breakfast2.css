@@ -105,7 +105,6 @@ html, body {
       justify-content: center;
   }
 
-  /* Hover effect */
   .nav a:hover {
       background-color: #1F2C35;
   }
@@ -169,7 +168,6 @@ hr {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-
 .tofu {
   max-width: 300px;
   display: flex;
@@ -178,14 +176,18 @@ hr {
 }
 
 .tofu img {
-  width: 104%;
   height: 245px;
-  margin-left: 35%;
+  width: 100%;
+  max-width: 300px; 
+  object-fit: cover;
+  margin-left: 36%;
+  border-radius: 3%;
 }
 
 .text {
   display: flex;
   flex-direction: column;
+  margin-left: 15%;
   justify-content: flex-start;
 }
 
@@ -197,27 +199,75 @@ hr {
   letter-spacing: 1.5px;
   padding: 5px;
   white-space: nowrap;
+  
 }
 
 .serving {
-  display: block;
-  font-family: Newsreader, serif;
-  font-size: 25px;
+  font-family: "Newsreader", serif;
+  font-size: 26px;
   color: #000000;
   letter-spacing: 1.5px;
   padding: 5px;
   font-style: italic;
-  margin: 0;
   font-weight: bold;
+  margin: 5px 0;
 }
 
 .description {
-  border: solid;
+  border: 1px solid #000; 
   padding: 15px;
-  border-width: 1px;
+  display: flex;
   font-size: 17px;
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 15px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: left;
+  line-height: 1.5; 
+}
+
+@media (max-width: 768px) {
+  .tofu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .tofu img {
+    max-width: 90%;
+    margin-left: 45%;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .description {
+    margin-left: 10%;
+    font-size: 16px;
+    padding: 12px;
+    width: 400px;
+
+  }
+  .tofu h2 {
+    margin-left: 30%;
+    white-space: normal; 
+  }
+  .serving{ 
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tofu h2 {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+ 
+  }
 }
 
 .main1 {
@@ -231,13 +281,13 @@ hr {
 }
 
 .ingredients-box {
-  flex: 3;
+  flex: 2;
   border: 1px solid #000;
   border-radius: 25px;
   padding: 10px;
+  height: 70%;
   background-color: #fff;
-  height: 193px;
-
+  
 }
 
 .cost-box {

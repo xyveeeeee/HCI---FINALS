@@ -169,21 +169,25 @@ hr {
     display: flex;
     gap: 1em;
     align-items: flex-start;
-}
-
-.Pancake img {
-    width: 104%;
+  }
+  
+  .Pancake img {
     height: 245px;
-}
-
-.text {
+    width: 100%;
+    max-width: 300px; 
+    object-fit: cover;
+    margin-left: 36%;
+    border-radius: 3%;
+  }
+  
+  .text {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
     justify-content: flex-start;
-}
-
-.Pancake h2 {
+  }
+  
+  .Pancake h2 {
     margin: 0;
     font-family: Newsreader, serif;
     font-size: 39px;
@@ -191,29 +195,75 @@ hr {
     letter-spacing: 1.5px;
     padding: 5px;
     white-space: nowrap;
-}
-
-.serving {
-    display: block;
-    font-family: Newsreader, serif;
-    font-size: 25px;
+    
+  }
+  
+  .serving {
+    font-family: "Newsreader", serif;
+    font-size: 26px;
     color: #000000;
     letter-spacing: 1.5px;
     padding: 5px;
     font-style: italic;
-    margin: 0;
     font-weight: bold;
-}
-
-.description {
+    margin: 5px 0;
+  }
+  
+  .description {
+  
     border: solid;
     padding: 15px;
     border-width: 1px;
     font-size: 17px;
     background-color: #ffffff;
     border-radius: 25px;
-    width: 600px;
-}
+    width: 600px;   
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .Pancake {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1em;
+    }
+  
+    .Pancake img {
+      max-width: 90%;
+      margin-left: 45%;
+    }
+  
+    .text {
+      max-width: 100%;
+    }
+  
+    .description {
+      margin-left: 10%;
+      font-size: 16px;
+      padding: 12px;
+      width: 400px;
+  
+    }
+    .Pancake h2 {
+      margin-left: 30%;
+      white-space: normal; 
+    }
+    .serving{ 
+      margin: 5px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Pancake h2 {
+      font-size: 22px;
+    }
+  
+    .description {
+      font-size: 14px;
+   
+    }
+  }
 
 .main1 {
     max-width: 900px;
@@ -234,6 +284,22 @@ hr {
     height: 99px;
 }
 
+@media screen and (max-width: 768px) {
+  .ingredients-box {
+      height: 100%; 
+      
+  }
+  .ingredients-box p {
+      margin-right: 0; 
+  }
+  .ingredients-box {
+      margin-left: 0;
+  }
+  .ingredients-box h3 {
+      margin-left: 0; 
+  }
+
+}
 .cost-box {
     flex: 2;
     display: flex;
